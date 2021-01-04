@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('image/img1.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 15px 15px;
+}
+header input::placeholder{
+    color: #d4d4d4;
+}
+header input{
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+header input:focus{
+    background-color: rgba(255, 255, 255, 0.205);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px 50px;
+    align-items: center;
+    text-align: center;
+}
+.location .city{
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.location .date{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+}
+.current .temp{
+    font-size: 90px;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 3px 6px #0000007a;
+}
+.current .temp span{
+    font-weight: 100;   
+}
+.current .weather{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 3px 3px #0000008e;
+}
+.current .hi-low{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 3px 3px #0000008e;
+}
